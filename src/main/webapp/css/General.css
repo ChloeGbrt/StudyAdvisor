@@ -1,0 +1,29 @@
+.rouge {
+background-color:#E84553;
+}
+.TextRouge {
+  color:#E84553;
+}
+.recherche {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.Ajouter {
+    float: right;
+    position: absolute;
+}
+.TitreAddMetier {
+    float: left;
+    margin-right: 15px;
+
+}
+.w4-margin{
+	margin: 8px;
+}
+a{
+    text-decoration: none;
+}
+.DefMetier{
+	height:100px;
+}

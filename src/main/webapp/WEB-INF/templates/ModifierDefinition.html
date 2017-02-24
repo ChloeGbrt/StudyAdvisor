@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<title>Modifier Def</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/boostrap.css" rel="stylesheet" type="text/css">
+<link href="css/General.css" rel="stylesheet" type="text/css">
+<body class="w3-light-grey">
+
+
+<div class="w3-display-topright w3-margin-right" style="width:15%">
+  <button class="w3-btn-block w3-section w3-padding rouge" type="submit"> 
+  <a href="Deconnexion"> Deconnexion </a></button>
+</div>
+
+<div class="w3-container w3-section w3-animate-opacity w3-center">
+<img src=images/Logo.png alt="Avatar" style="width:50%" >
+</div>
+
+
+<div class="w3-row-padding w3-margin-left w3-margin-right">
+
+<div class="w3-margin-bottom w3-display-middle" th:each="metier :${Metier}" style="width:50%">
+<form method="post" >
+  <ul class="w3-ul w3-border w3-center w3-hover-shadow">
+    <li class="w3-black w3-xlarge w3-padding-32" th:text="${metier.Nom}"></li>
+    <li class="w3-white w3-padding-24 ">
+      <textarea name="message"  style="width:80% " rows="4" th:text="${metier.Description}"></textarea>
+    </li>
+    <li class="w3-white w3-padding-24 ">
+      <button class="w3-btn w3-green w3-padding-12 w3-margin-right" style="width:25%" > <a href="Metiers"> Annuler </a></button>
+		<input class="w3-btn w3-green w3-padding-12 w3-margin-left " style="width:25%" type="submit" value="Valider "  />
+    </li>
+  </ul>
+ </form>
+</div>
+
+</div>
+
+</body>
+</html> 
